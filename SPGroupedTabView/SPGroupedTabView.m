@@ -70,7 +70,16 @@
 
 #pragma mark -
 
-@interface SPGroupedTabView()
+@interface SPGroupedTabView() {
+	NSMutableArray *_cachedGroupCells;
+	NSMutableArray *_cachedTabCells;
+	
+	NSMutableDictionary *_cachedSelectionInfo;
+	
+	NSMutableArray *_groupTrackingAreas;
+	NSMutableArray *_tabTrackingAreas;
+	NSInteger _tabHovering;
+}
 
 @property(readwrite,retain) NSViewController *contentViewController;
 @property(readwrite,retain) NSView *contentView;
@@ -104,25 +113,6 @@
 
 @implementation SPGroupedTabView
 
-//@synthesize dataSource;
-//@synthesize delegate;
-//
-//@synthesize contentBackgroundColor;
-//@synthesize groupBackgroundColor;
-//@synthesize tabBackgroundColor;
-//
-//@synthesize selectedGroupIndexes;
-//@synthesize selectedTabIndexes;
-//
-//@synthesize contentViewController;
-//@synthesize contentView;
-//
-//@synthesize preservesSelection;
-//
-//@synthesize highlightGroupIcons;
-//@synthesize drawsContentBorder;
-//@synthesize groupMargin;
-
 #pragma mark -
 
 - (id)initWithFrame:(NSRect)frame {
@@ -154,31 +144,6 @@
 	}
     return self;
 }
-
-//- (void) dealloc {
-//	self.dataSource = nil;
-//	self.delegate = nil;
-//	
-//	self.selectedGroupIndexes = nil;
-//	self.selectedTabIndexes = nil;
-//	
-//	self.contentBackgroundColor = nil;
-//	self.groupBackgroundColor = nil;
-//	self.tabBackgroundColor = nil;
-//	
-//	self.contentViewController = nil;
-//	self.contentView = nil;
-//	
-//	[_cachedGroupCells release], _cachedGroupCells = nil;
-//	[_cachedTabCells release], _cachedTabCells = nil;
-//	
-//	[_groupTrackingAreas release], _groupTrackingAreas = nil;
-//	[_tabTrackingAreas release], _tabTrackingAreas = nil;
-//	
-//	[_cachedSelectionInfo release], _cachedSelectionInfo = nil;
-//		
-//	[super dealloc];
-//}
 
 #pragma mark -
 #pragma mark Cell Factory
@@ -229,7 +194,6 @@
 		if ( [self.delegate respondsToSelector:@selector(groupedTabView:willSelectGroup:)] )
 			[self.delegate groupedTabView:self willSelectGroup:[inIndexSet firstIndex]];
 				
-//		[selectedGroupIndexes release];
 		_selectedGroupIndexes = [inIndexSet copy];
 		
 		// Rebuild tab row whenever the group selection changes. I check the cell cache because
@@ -239,7 +203,6 @@
 		// Whenever the selected group is changed, I must also reset the selected tab
 		// I want to force reselection, so I nil out the selected tab index beforehand
 		
-//		[selectedTabIndexes release];
 		_selectedTabIndexes = nil;
 		
 		NSIndexSet *lastSelected = [self _lastSelectedIndexesForGroup:[inIndexSet firstIndex]];
@@ -258,7 +221,6 @@
 		if ( [self.delegate respondsToSelector:@selector(groupedTabView:willSelectTab:group:)] )
 			[self.delegate groupedTabView:self willSelectTab:[inIndexSet firstIndex] group:[self.selectedGroupIndexes firstIndex]];
 		
-//		[selectedTabIndexes release];
 		_selectedTabIndexes = [inIndexSet copy];
 		
 		// As in the above method, I check the cell cache because this indicates if
@@ -304,7 +266,6 @@
 			[self.delegate groupedTabView:self willDisplayCell:aGroupCell forGroup:i];
 		
 		[_cachedGroupCells addObject:aGroupCell];
-//		[aGroupCell release];
 	}
 	
 	[self updateTrackingAreas];
@@ -344,7 +305,6 @@
 				[self.delegate groupedTabView:self willDisplayCell:aTabCell forTab:i group:[self.selectedGroupIndexes firstIndex]];
 		
 			[_cachedTabCells addObject:aTabCell];
-//			[aTabCell release];
 		}
 	}
 	
@@ -781,8 +741,6 @@
 			
 			[self addTrackingArea:trackingArea];
 			[_tabTrackingAreas addObject:trackingArea];
-			
-//			[trackingArea release];
 		}
 	}
 	
@@ -806,8 +764,6 @@
 		
 		[self addTrackingArea:trackingArea];
 		[_groupTrackingAreas addObject:trackingArea];
-		
-//		[trackingArea release];
 	}
 }
 
@@ -1075,15 +1031,6 @@
 @synthesize textColor;
 @synthesize borderColor;
 @synthesize mouseOver = _mouseOver;
-
-#pragma mark -
-
-//- (void) dealloc {
-//	self.textColor = nil;
-//	self.borderColor = nil;
-//	
-//	[super dealloc];
-//}
 
 #pragma mark -
 

@@ -57,10 +57,7 @@ SPGroupedTabViewDelegate>
 @property (assign) IBOutlet NSMatrix *groupMatrix;
 @property (assign) IBOutlet NSMatrix *tabMatrix;
 
-//@property (assign) IBOutlet NSImageView *statesView;
-//@property (assign) IBOutlet NSTextField *citiesView;
 @property (assign) IBOutlet WebView *exampleView;
-//@property (assign) IBOutlet NSTextView *planetsView;
 
 - (IBAction) showPanel:(id)sender;
 - (IBAction) setSelectedGroup:(id)sender;

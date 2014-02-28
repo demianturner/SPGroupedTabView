@@ -43,36 +43,7 @@
 @class SPGroupedTabViewGroupCell;
 @class SPGroupedTabViewTabCell;
 
-@interface SPGroupedTabView : NSView {
-	
-//	id<SPGroupedTabViewDataSource> dataSource;
-//	id<SPGroupedTabViewDelegate> delegate;
-//	
-//	NSIndexSet *selectedGroupIndexes;
-//	NSIndexSet *selectedTabIndexes;
-//	
-//	NSColor *contentBackgroundColor;
-//	NSColor *groupBackgroundColor;
-//	NSColor *tabBackgroundColor;
-//	
-//	BOOL preservesSelection;
-//	BOOL highlightGroupIcons;
-//	BOOL drawsContentBorder;
-//	CGFloat groupMargin;
-	
-//	NSViewController *contentViewController;
-//	NSView *contentView;
-	
-	@private
-	NSMutableArray *_cachedGroupCells;
-	NSMutableArray *_cachedTabCells;
-	
-	NSMutableDictionary *_cachedSelectionInfo;
-	
-	NSMutableArray *_groupTrackingAreas;
-	NSMutableArray *_tabTrackingAreas;
-	NSInteger _tabHovering;
-}
+@interface SPGroupedTabView : NSView
 
 @property(readwrite,assign) IBOutlet id<SPGroupedTabViewDataSource> dataSource;
 @property(readwrite,assign) IBOutlet id<SPGroupedTabViewDelegate> delegate;
