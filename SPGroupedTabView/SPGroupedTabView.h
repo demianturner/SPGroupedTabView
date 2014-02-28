@@ -45,23 +45,23 @@
 
 @interface SPGroupedTabView : NSView {
 	
-	id<SPGroupedTabViewDataSource> dataSource;
-	id<SPGroupedTabViewDelegate> delegate;
+//	id<SPGroupedTabViewDataSource> dataSource;
+//	id<SPGroupedTabViewDelegate> delegate;
+//	
+//	NSIndexSet *selectedGroupIndexes;
+//	NSIndexSet *selectedTabIndexes;
+//	
+//	NSColor *contentBackgroundColor;
+//	NSColor *groupBackgroundColor;
+//	NSColor *tabBackgroundColor;
+//	
+//	BOOL preservesSelection;
+//	BOOL highlightGroupIcons;
+//	BOOL drawsContentBorder;
+//	CGFloat groupMargin;
 	
-	NSIndexSet *selectedGroupIndexes;
-	NSIndexSet *selectedTabIndexes;
-	
-	NSColor *contentBackgroundColor;
-	NSColor *groupBackgroundColor;
-	NSColor *tabBackgroundColor;
-	
-	BOOL preservesSelection;
-	BOOL highlightGroupIcons;
-	BOOL drawsContentBorder;
-	CGFloat groupMargin;
-	
-	NSViewController *contentViewController;
-	NSView *contentView;
+//	NSViewController *contentViewController;
+//	NSView *contentView;
 	
 	@private
 	NSMutableArray *_cachedGroupCells;
@@ -74,8 +74,8 @@
 	NSInteger _tabHovering;
 }
 
-@property(readwrite,assign) id<SPGroupedTabViewDataSource> dataSource;
-@property(readwrite,assign) id<SPGroupedTabViewDelegate> delegate;
+@property(readwrite,assign) IBOutlet id<SPGroupedTabViewDataSource> dataSource;
+@property(readwrite,assign) IBOutlet id<SPGroupedTabViewDelegate> delegate;
 
 @property(readwrite,copy) NSColor *contentBackgroundColor;
 @property(readwrite,copy) NSColor *groupBackgroundColor;
@@ -92,8 +92,8 @@
 	// are providing image masks. This value is NO by default. You should set 
 	// this value prior to loading data into the view.
 
-@property(readwrite,copy) NSIndexSet *selectedGroupIndexes;
-@property(readwrite,copy) NSIndexSet *selectedTabIndexes;
+@property(nonatomic, readwrite, copy) NSIndexSet *selectedGroupIndexes;
+@property(nonatomic, readwrite, copy) NSIndexSet *selectedTabIndexes;
 
 	// Multiple group and tab selection is not supported and likely never will be; it 
 	// does not make sense given the context. But you may want to bind these

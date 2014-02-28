@@ -1,0 +1,500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD44094818C0D8FF0050F3C4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD44094718C0D8FF0050F3C4 /* Cocoa.framework */; };
+		AD44095218C0D8FF0050F3C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD44095018C0D8FF0050F3C4 /* InfoPlist.strings */; };
+		AD44095418C0D8FF0050F3C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD44095318C0D8FF0050F3C4 /* main.m */; };
+		AD44095818C0D8FF0050F3C4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = AD44095618C0D8FF0050F3C4 /* Credits.rtf */; };
+		AD44095B18C0D8FF0050F3C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD44095A18C0D8FF0050F3C4 /* AppDelegate.m */; };
+		AD44095E18C0D8FF0050F3C4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD44095C18C0D8FF0050F3C4 /* MainMenu.xib */; };
+		AD44096718C0D8FF0050F3C4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD44096618C0D8FF0050F3C4 /* XCTest.framework */; };
+		AD44096818C0D8FF0050F3C4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD44094718C0D8FF0050F3C4 /* Cocoa.framework */; };
+		AD44097E18C0D9510050F3C4 /* SPGroupedTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD44097D18C0D9510050F3C4 /* SPGroupedTabView.m */; };
+		AD44098018C0DD470050F3C4 /* ExampleContent.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD44097F18C0DD470050F3C4 /* ExampleContent.xib */; };
+		AD44098518C0E3E60050F3C4 /* city.png in Resources */ = {isa = PBXBuildFile; fileRef = AD44098118C0E3E60050F3C4 /* city.png */; };
+		AD44098618C0E3E60050F3C4 /* planet.png in Resources */ = {isa = PBXBuildFile; fileRef = AD44098218C0E3E60050F3C4 /* planet.png */; };
+		AD44098718C0E3E60050F3C4 /* states.png in Resources */ = {isa = PBXBuildFile; fileRef = AD44098318C0E3E60050F3C4 /* states.png */; };
+		AD44098818C0E3E60050F3C4 /* tower.png in Resources */ = {isa = PBXBuildFile; fileRef = AD44098418C0E3E60050F3C4 /* tower.png */; };
+		AD44098B18C0E61F0050F3C4 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD44098A18C0E61F0050F3C4 /* WebKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD44096918C0D8FF0050F3C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD44093C18C0D8FF0050F3C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD44094318C0D8FF0050F3C4;
+			remoteInfo = SPGroupedTabViewTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD44094418C0D8FF0050F3C4 /* SPGroupedTabView Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SPGroupedTabView Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD44094718C0D8FF0050F3C4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		AD44094A18C0D8FF0050F3C4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		AD44094B18C0D8FF0050F3C4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		AD44094C18C0D8FF0050F3C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AD44094F18C0D8FF0050F3C4 /* SPGroupedTabView Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SPGroupedTabView Example-Info.plist"; sourceTree = "<group>"; };
+		AD44095118C0D8FF0050F3C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AD44095318C0D8FF0050F3C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AD44095518C0D8FF0050F3C4 /* SPGroupedTabView Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SPGroupedTabView Example-Prefix.pch"; sourceTree = "<group>"; };
+		AD44095718C0D8FF0050F3C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		AD44095918C0D8FF0050F3C4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AD44095A18C0D8FF0050F3C4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AD44095D18C0D8FF0050F3C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		AD44096518C0D8FF0050F3C4 /* SPGroupedTabView ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SPGroupedTabView ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD44096618C0D8FF0050F3C4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AD44097C18C0D9510050F3C4 /* SPGroupedTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPGroupedTabView.h; sourceTree = "<group>"; };
+		AD44097D18C0D9510050F3C4 /* SPGroupedTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPGroupedTabView.m; sourceTree = "<group>"; };
+		AD44097F18C0DD470050F3C4 /* ExampleContent.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExampleContent.xib; sourceTree = "<group>"; };
+		AD44098118C0E3E60050F3C4 /* city.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = city.png; path = Images/city.png; sourceTree = "<group>"; };
+		AD44098218C0E3E60050F3C4 /* planet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = planet.png; path = Images/planet.png; sourceTree = "<group>"; };
+		AD44098318C0E3E60050F3C4 /* states.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = states.png; path = Images/states.png; sourceTree = "<group>"; };
+		AD44098418C0E3E60050F3C4 /* tower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tower.png; path = Images/tower.png; sourceTree = "<group>"; };
+		AD44098A18C0E61F0050F3C4 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD44094118C0D8FF0050F3C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD44098B18C0E61F0050F3C4 /* WebKit.framework in Frameworks */,
+				AD44094818C0D8FF0050F3C4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD44096218C0D8FF0050F3C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD44096818C0D8FF0050F3C4 /* Cocoa.framework in Frameworks */,
+				AD44096718C0D8FF0050F3C4 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD44093B18C0D8FF0050F3C4 = {
+			isa = PBXGroup;
+			children = (
+				AD44094D18C0D8FF0050F3C4 /* Classes */,
+				AD44098E18C0ECBD0050F3C4 /* Vendor */,
+				AD44094618C0D8FF0050F3C4 /* Frameworks */,
+				AD44094518C0D8FF0050F3C4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD44094518C0D8FF0050F3C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD44094418C0D8FF0050F3C4 /* SPGroupedTabView Example.app */,
+				AD44096518C0D8FF0050F3C4 /* SPGroupedTabView ExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD44094618C0D8FF0050F3C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD44098A18C0E61F0050F3C4 /* WebKit.framework */,
+				AD44094718C0D8FF0050F3C4 /* Cocoa.framework */,
+				AD44096618C0D8FF0050F3C4 /* XCTest.framework */,
+				AD44094918C0D8FF0050F3C4 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD44094918C0D8FF0050F3C4 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD44094A18C0D8FF0050F3C4 /* AppKit.framework */,
+				AD44094B18C0D8FF0050F3C4 /* CoreData.framework */,
+				AD44094C18C0D8FF0050F3C4 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		AD44094D18C0D8FF0050F3C4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AD44095918C0D8FF0050F3C4 /* AppDelegate.h */,
+				AD44095A18C0D8FF0050F3C4 /* AppDelegate.m */,
+				AD44098918C0E3F10050F3C4 /* Images */,
+				AD44094E18C0D8FF0050F3C4 /* Supporting Files */,
+			);
+			name = Classes;
+			path = "SPGroupedTabView Example";
+			sourceTree = "<group>";
+		};
+		AD44094E18C0D8FF0050F3C4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD44095C18C0D8FF0050F3C4 /* MainMenu.xib */,
+				AD44097F18C0DD470050F3C4 /* ExampleContent.xib */,
+				AD44094F18C0D8FF0050F3C4 /* SPGroupedTabView Example-Info.plist */,
+				AD44095018C0D8FF0050F3C4 /* InfoPlist.strings */,
+				AD44095318C0D8FF0050F3C4 /* main.m */,
+				AD44095518C0D8FF0050F3C4 /* SPGroupedTabView Example-Prefix.pch */,
+				AD44095618C0D8FF0050F3C4 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD44097B18C0D9510050F3C4 /* SPGroupedTabView */ = {
+			isa = PBXGroup;
+			children = (
+				AD44097C18C0D9510050F3C4 /* SPGroupedTabView.h */,
+				AD44097D18C0D9510050F3C4 /* SPGroupedTabView.m */,
+			);
+			name = SPGroupedTabView;
+			path = ../SPGroupedTabView;
+			sourceTree = "<group>";
+		};
+		AD44098918C0E3F10050F3C4 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				AD44098118C0E3E60050F3C4 /* city.png */,
+				AD44098218C0E3E60050F3C4 /* planet.png */,
+				AD44098318C0E3E60050F3C4 /* states.png */,
+				AD44098418C0E3E60050F3C4 /* tower.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		AD44098E18C0ECBD0050F3C4 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				AD44097B18C0D9510050F3C4 /* SPGroupedTabView */,
+			);
+			name = Vendor;
+			path = "SPGroupedTabView Example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD44094318C0D8FF0050F3C4 /* SPGroupedTabView Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD44097518C0D8FF0050F3C4 /* Build configuration list for PBXNativeTarget "SPGroupedTabView Example" */;
+			buildPhases = (
+				AD44094018C0D8FF0050F3C4 /* Sources */,
+				AD44094118C0D8FF0050F3C4 /* Frameworks */,
+				AD44094218C0D8FF0050F3C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SPGroupedTabView Example";
+			productName = SPGroupedTabViewTest;
+			productReference = AD44094418C0D8FF0050F3C4 /* SPGroupedTabView Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD44096418C0D8FF0050F3C4 /* SPGroupedTabView ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD44097818C0D8FF0050F3C4 /* Build configuration list for PBXNativeTarget "SPGroupedTabView ExampleTests" */;
+			buildPhases = (
+				AD44096118C0D8FF0050F3C4 /* Sources */,
+				AD44096218C0D8FF0050F3C4 /* Frameworks */,
+				AD44096318C0D8FF0050F3C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD44096A18C0D8FF0050F3C4 /* PBXTargetDependency */,
+			);
+			name = "SPGroupedTabView ExampleTests";
+			productName = SPGroupedTabViewTestTests;
+			productReference = AD44096518C0D8FF0050F3C4 /* SPGroupedTabView ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD44093C18C0D8FF0050F3C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Seagull Systems";
+				TargetAttributes = {
+					AD44096418C0D8FF0050F3C4 = {
+						TestTargetID = AD44094318C0D8FF0050F3C4;
+					};
+				};
+			};
+			buildConfigurationList = AD44093F18C0D8FF0050F3C4 /* Build configuration list for PBXProject "SPGroupedTabView Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD44093B18C0D8FF0050F3C4;
+			productRefGroup = AD44094518C0D8FF0050F3C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD44094318C0D8FF0050F3C4 /* SPGroupedTabView Example */,
+				AD44096418C0D8FF0050F3C4 /* SPGroupedTabView ExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD44094218C0D8FF0050F3C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD44098018C0DD470050F3C4 /* ExampleContent.xib in Resources */,
+				AD44098518C0E3E60050F3C4 /* city.png in Resources */,
+				AD44095218C0D8FF0050F3C4 /* InfoPlist.strings in Resources */,
+				AD44098618C0E3E60050F3C4 /* planet.png in Resources */,
+				AD44098718C0E3E60050F3C4 /* states.png in Resources */,
+				AD44098818C0E3E60050F3C4 /* tower.png in Resources */,
+				AD44095818C0D8FF0050F3C4 /* Credits.rtf in Resources */,
+				AD44095E18C0D8FF0050F3C4 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD44096318C0D8FF0050F3C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD44094018C0D8FF0050F3C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD44095B18C0D8FF0050F3C4 /* AppDelegate.m in Sources */,
+				AD44097E18C0D9510050F3C4 /* SPGroupedTabView.m in Sources */,
+				AD44095418C0D8FF0050F3C4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD44096118C0D8FF0050F3C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD44096A18C0D8FF0050F3C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD44094318C0D8FF0050F3C4 /* SPGroupedTabView Example */;
+			targetProxy = AD44096918C0D8FF0050F3C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AD44095018C0D8FF0050F3C4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD44095118C0D8FF0050F3C4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AD44095618C0D8FF0050F3C4 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD44095718C0D8FF0050F3C4 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		AD44095C18C0D8FF0050F3C4 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD44095D18C0D8FF0050F3C4 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD44097318C0D8FF0050F3C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AD44097418C0D8FF0050F3C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AD44097618C0D8FF0050F3C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SPGroupedTabView Example/SPGroupedTabView Example-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/SPGroupedTabView Example/SPGroupedTabView Example-Info.plist";
+				PRODUCT_NAME = "SPGroupedTabView Example";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AD44097718C0D8FF0050F3C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SPGroupedTabView Example/SPGroupedTabView Example-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/SPGroupedTabView Example/SPGroupedTabView Example-Info.plist";
+				PRODUCT_NAME = "SPGroupedTabView Example";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AD44097918C0D8FF0050F3C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SPGroupedTabViewTest.app/Contents/MacOS/SPGroupedTabViewTest";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SPGroupedTabViewTest/SPGroupedTabViewTest-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SPGroupedTabViewTestTests/SPGroupedTabViewTestTests-Info.plist";
+				PRODUCT_NAME = "SPGroupedTabView ExampleTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AD44097A18C0D8FF0050F3C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SPGroupedTabViewTest.app/Contents/MacOS/SPGroupedTabViewTest";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SPGroupedTabViewTest/SPGroupedTabViewTest-Prefix.pch";
+				INFOPLIST_FILE = "SPGroupedTabViewTestTests/SPGroupedTabViewTestTests-Info.plist";
+				PRODUCT_NAME = "SPGroupedTabView ExampleTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD44093F18C0D8FF0050F3C4 /* Build configuration list for PBXProject "SPGroupedTabView Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD44097318C0D8FF0050F3C4 /* Debug */,
+				AD44097418C0D8FF0050F3C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD44097518C0D8FF0050F3C4 /* Build configuration list for PBXNativeTarget "SPGroupedTabView Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD44097618C0D8FF0050F3C4 /* Debug */,
+				AD44097718C0D8FF0050F3C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD44097818C0D8FF0050F3C4 /* Build configuration list for PBXNativeTarget "SPGroupedTabView ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD44097918C0D8FF0050F3C4 /* Debug */,
+				AD44097A18C0D8FF0050F3C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD44093C18C0D8FF0050F3C4 /* Project object */;
+}

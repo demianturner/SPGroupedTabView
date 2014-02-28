@@ -29,7 +29,7 @@
  INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR
  TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-*/
+ */
 
 // Basically, you can use the code in your free, commercial, private and public projects
 // as long as you include the above notice and attribute the code to Philip Dow / Sprouted
@@ -44,27 +44,11 @@
 
 #import "SPGroupedTabView.h"
 
-@interface TwoTieredTabViewAppDelegate : NSObject <NSApplicationDelegate,SPGroupedTabViewDataSource,SPGroupedTabViewDelegate> {
-   
-	// outlets
-	NSWindow *window;
-	NSPanel *panel;
-	SPGroupedTabView *groupedTabView;
-	
-	NSMatrix *groupMatrix;
-	NSMatrix *tabMatrix;
-	
-	// content views
-	NSImageView *statesView;
-	NSTextField *citiesView;
-	WebView *nationsView;
-	NSTextView *planetsView;
-	
-	NSMutableArray *viewControllers;
-	
-	// iVars
-	NSArray *dataModel;
-}
+@interface AppDelegate : NSObject <NSApplicationDelegate, SPGroupedTabViewDataSource,
+SPGroupedTabViewDelegate>
+
+@property (nonatomic, copy) NSArray *dataModel;
+@property (nonatomic, copy) NSMutableArray *viewControllers;
 
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet NSPanel *panel;
@@ -73,10 +57,10 @@
 @property (assign) IBOutlet NSMatrix *groupMatrix;
 @property (assign) IBOutlet NSMatrix *tabMatrix;
 
-@property (assign) IBOutlet NSImageView *statesView;
-@property (assign) IBOutlet NSTextField *citiesView;
-@property (assign) IBOutlet WebView *nationsView;
-@property (assign) IBOutlet NSTextView *planetsView;
+//@property (assign) IBOutlet NSImageView *statesView;
+//@property (assign) IBOutlet NSTextField *citiesView;
+@property (assign) IBOutlet WebView *exampleView;
+//@property (assign) IBOutlet NSTextView *planetsView;
 
 - (IBAction) showPanel:(id)sender;
 - (IBAction) setSelectedGroup:(id)sender;
