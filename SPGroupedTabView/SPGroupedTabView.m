@@ -867,6 +867,10 @@
 	[_cachedSelectionInfo setObject:inIndexes forKey:[NSNumber numberWithUnsignedInteger:groupIndex]];
 }
 
+-(void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 @end
 
 #pragma mark -
