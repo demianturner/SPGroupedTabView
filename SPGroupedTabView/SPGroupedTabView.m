@@ -886,15 +886,6 @@
 
 #pragma mark -
 
-//- (void) dealloc {
-//	self.textColor = nil;
-//	self.iconColor = nil;
-//	
-//	[super dealloc];
-//}
-
-#pragma mark -
-
 - (void)drawWithFrame:(NSRect)cellFrame inView:(NSView *)controlView {
 	
 	//[[NSColor colorWithCalibratedWhite:0.1 alpha:1.0] set];

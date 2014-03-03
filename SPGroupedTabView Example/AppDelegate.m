@@ -372,9 +372,7 @@
 	// in that view whenever the tab selection changes. Normally you would rely on
 	// your data model to provide the appropriate content.
 	
-    //	NSString *imageName = nil;
 	NSString *searchString = nil;
-    //	NSString *planetText = nil;
     NSString *googleString = nil;
 	
 	switch ( groupIndex ) {
@@ -391,7 +389,7 @@
 					searchString = @"people";
 					break;
 				case 1:
-					searchString = @"families";
+					searchString = @"family";
 					break;
 				case 2:
 					searchString = @"sources";
@@ -404,7 +402,7 @@
 					break;
 			}
 			
-			googleString = [NSString stringWithFormat:@"http://news.google.com/news/search?aq=f&pz=1&cf=all&ned=us&hl=en&q=%@&btnmeta_news_search=Search+News",searchString];
+			googleString = [NSString stringWithFormat:@"http://news.google.com/news/search?aq=f&pz=1&cf=all&ned=us&hl=en&q=%@&btnmeta_news_search=Search+News", [searchString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
 			[[self.exampleView mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:googleString]]];
 			
 			break;
@@ -422,7 +420,7 @@
 					break;
 			}
 			
-			googleString = [NSString stringWithFormat:@"http://news.google.com/news/search?aq=f&pz=1&cf=all&ned=us&hl=en&q=%@&btnmeta_news_search=Search+News",searchString];
+			googleString = [NSString stringWithFormat:@"http://news.google.com/news/search?aq=f&pz=1&cf=all&ned=us&hl=en&q=%@&btnmeta_news_search=Search+News", [searchString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
 			[[self.exampleView mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:googleString]]];
             
 			break;
@@ -440,7 +438,7 @@
 					break;
 			}
 			
-			googleString = [NSString stringWithFormat:@"http://news.google.com/news/search?aq=f&pz=1&cf=all&ned=us&hl=en&q=%@&btnmeta_news_search=Search+News",searchString];
+			googleString = [NSString stringWithFormat:@"http://news.google.com/news/search?aq=f&pz=1&cf=all&ned=us&hl=en&q=%@&btnmeta_news_search=Search+News", [searchString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
 			[[self.exampleView mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:googleString]]];
 			
 			break;
@@ -463,7 +461,7 @@
 					break;
 			}
 			
-			googleString = [NSString stringWithFormat:@"http://news.google.com/news/search?aq=f&pz=1&cf=all&ned=us&hl=en&q=%@&btnmeta_news_search=Search+News",searchString];
+			googleString = [NSString stringWithFormat:@"http://news.google.com/news/search?aq=f&pz=1&cf=all&ned=us&hl=en&q=%@&btnmeta_news_search=Search+News", [searchString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
 			[[self.exampleView mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:googleString]]];
 			
 			break;
@@ -484,7 +482,7 @@
 					break;
 			}
 			
-			googleString = [NSString stringWithFormat:@"http://news.google.com/news/search?aq=f&pz=1&cf=all&ned=us&hl=en&q=%@&btnmeta_news_search=Search+News",searchString];
+			googleString = [NSString stringWithFormat:@"http://news.google.com/news/search?aq=f&pz=1&cf=all&ned=us&hl=en&q=%@&btnmeta_news_search=Search+News", [searchString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
 			[[self.exampleView mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:googleString]]];
 			
 			break;
@@ -503,9 +501,8 @@
 				default:
 					searchString = @"";
             }
-            
 			
-			googleString = [NSString stringWithFormat:@"http://news.google.com/news/search?aq=f&pz=1&cf=all&ned=us&hl=en&q=%@&btnmeta_news_search=Search+News",searchString];
+			googleString = [NSString stringWithFormat:@"http://news.google.com/news/search?aq=f&pz=1&cf=all&ned=us&hl=en&q=%@&btnmeta_news_search=Search+News", [searchString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
 			[[self.exampleView mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:googleString]]];
 			
 			break;
